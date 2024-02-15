@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'Kayak Sans';
+  src: url('assets/fonts/Kayak\ Sans\ regular.otf') format('opentype');
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Kayak Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  letter-spacing: 3px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -30,7 +35,20 @@ body {
   min-width: 320px;
   min-height: 100vh;
   cursor: none;
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(13, 13, 13);
+
+  &::after {
+    background-image: url('src/assets/noise.png');
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: inherit;
+    opacity: 0.1;
+    mix-blend-mode: luminosity;
+  }
 }
 
 h1 {

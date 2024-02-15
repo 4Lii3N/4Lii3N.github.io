@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.scss';
+import logo from '@assets/blunt_logo.png';
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Header</h1>
+      <img className='header__img' src={logo} />
     </div>
   );
 }
