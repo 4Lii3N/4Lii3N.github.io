@@ -18,7 +18,6 @@ const Card = ({ title, description, index, img }) => {
 
   return (
     <div ref={cardRef} className='card' style={{ "--mouse-x": relativePosition.x + "px", "--mouse-y": relativePosition.y + "px", "--img": "url(" + img + ")" }} id={"card" + index}>
-      <div className='card__border'></div>
       <div className='card__content'>
         <h2>{title}</h2>
         <p>{description}</p>
