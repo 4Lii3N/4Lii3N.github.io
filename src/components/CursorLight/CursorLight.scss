@@ -1,0 +1,42 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.cursor-light {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: left 0.1s ease, top 0.1s ease;
+
+  &__circle1 {
+    width: 75px;
+    height: 125px;
+    background-color: #d305f7;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%), rotate(45deg);
+    filter: blur(80px);
+    z-index: 97;
+  }
+
+  &__circle2 {
+    width: 100px;
+    height: 200px;
+    background-color: #26e6ff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    filter: blur(80px);
+    z-index: 98;
+  }
+}
