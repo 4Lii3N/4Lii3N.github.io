@@ -38,7 +38,7 @@ body {
   background-color: rgb(13, 13, 13);
 
   &::after {
-    background-image: url('src/assets/noise.png');
+    background-image: url('assets/noise.png');
     content: '';
     position: fixed;
     top: 0;
